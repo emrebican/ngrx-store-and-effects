@@ -1,0 +1,21 @@
+<h1>Books</h1>
+
+<form [formGroup]="form">
+  <input type="text" placeholder="book title" formControlName="title" />
+  <button type="submit" (click)="onAddBook()">Add Book</button>
+</form>
+
+<div>
+  <h2 *ngIf="isLoading$ | async">Loading...</h2>
+  <h2 *ngIf="error$ | async as error">{{ error }}</h2>
+</div>
+
+<br />
+<div *ngIf="!(isLoading$ | async)">
+  <div *ngFor="let book of books$ | async; let i = index">
+    {{ i + 1 }} -
+    <span [ngClass]="{ completed: book.completed }">{{ book.title }}</span>
+    <button (click)="onRemoveBook(book.id)">Remove</button>
+    <button (click)="onCompleteBook(book)">Complete</button>
+  </div>
+</div>

@@ -1,0 +1,18 @@
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+
+  a {
+    text-decoration: none;
+    font-size: 20px;
+    color: #212121;
+    padding: 5px 10px;
+  }
+
+  .active {
+    background: #212121;
+    color: white;
+  }
+}

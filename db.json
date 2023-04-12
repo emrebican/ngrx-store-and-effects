@@ -1,0 +1,42 @@
+{
+  "posts": [
+    {
+      "title": "post 1",
+      "id": "1681201236469"
+    },
+    {
+      "title": "post 2",
+      "id": "1681201240854"
+    },
+    {
+      "title": "post 3",
+      "id": "1681201243511"
+    },
+    {
+      "title": "aaaa",
+      "id": "1681221551946"
+    }
+  ],
+  "books": [
+    {
+      "id": 1,
+      "title": "book 1",
+      "completed": true
+    },
+    {
+      "title": "book 2",
+      "id": 2,
+      "completed": false
+    },
+    {
+      "title": "book 3",
+      "id": 3,
+      "completed": false
+    },
+    {
+      "id": 1681220449907,
+      "title": "book 4",
+      "completed": true
+    }
+  ]
+}

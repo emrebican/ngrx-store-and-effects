@@ -1,0 +1,18 @@
+<h1>Posts</h1>
+
+<form [formGroup]="form">
+  <input type="text" placeholder="add post..." formControlName="title" />
+  <button type="submit" (click)="onAddPost()">Add Post</button>
+</form>
+
+<div>
+  <h2 *ngIf="isLoading$ | async">Loading...</h2>
+  <h2 *ngIf="error$ | async as error">{{ error }}</h2>
+</div>
+
+<br />
+<div *ngFor="let post of posts$ | async; let i = index">
+  {{ i + 1 }} - {{ post.title }}
+  <button (click)="onDeletePost(post.id)">Delete</button>
+  <button (click)="onUpdatePost(post.id)">Update</button>
+</div>
