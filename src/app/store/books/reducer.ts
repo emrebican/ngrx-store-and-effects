@@ -51,7 +51,7 @@ export const booksReducer = createReducer(
   on(BooksActions.completeBook, (state, action) => ({
     ...state,
     books: state.books.map((book) =>
-      book.id === action.id ? { ...book, completed: true } : book
+      book.id === action.id ? { ...book, completed: !book.completed } : book
     )
   }))
 );

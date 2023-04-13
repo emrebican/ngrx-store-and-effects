@@ -1,7 +1,8 @@
+import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import { Observable, delay } from 'rxjs';
+
 import { I_Book } from '../interfaces/book/book.interface';
-import { Injectable } from '@angular/core';
 
 @Injectable({ providedIn: 'root' })
 export class BooksService {

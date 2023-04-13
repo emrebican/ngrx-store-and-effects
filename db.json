@@ -21,7 +21,7 @@
     {
       "id": 1,
       "title": "book 1",
-      "completed": true
+      "completed": false
     },
     {
       "title": "book 2",
@@ -36,7 +36,7 @@
     {
       "id": 1681220449907,
       "title": "book 4",
-      "completed": true
+      "completed": false
     }
   ]
 }
